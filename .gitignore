@@ -1,0 +1,60 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/src/generated/prisma
+
+/src/generated/prisma
+
+# Dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build output (misal dari TypeScript / Babel)
+dist/
+build/
+
+# Prisma
+# file database lokal SQLite dan cache migrasi
+prisma/*.db
+prisma/*.sqlite
+prisma/migrations/*/steps.json
+prisma/migrations/*/migration.sql-journal
+
+# Uploads / temp
+uploads/
+tmp/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor & IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# TypeScript cache (kalau pakai TS)
+*.tsbuildinfo
+
+# PM2 or process manager artifacts
+.pids
+pids/
+dump.pm2
